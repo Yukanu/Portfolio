@@ -1,0 +1,563 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+
+
+body {
+    font-family: Roboto Mono, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    min-height: 100vh;
+    margin-top: 20px;
+    letter-spacing: .8px;
+    line-height: 25px
+}
+
+/*border*/
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+/*Sort ramme rundt om alle siderne*/
+
+#site-border-bottom,
+#site-border-left,
+#site-border-right,
+#site-border-top {
+    background: #000;
+    position: fixed;
+    z-index: 1
+}
+
+#site-border-left,
+#site-border-right {
+    top: 0;
+    bottom: 0;
+    width: 10px
+}
+
+#site-border-left {
+    left: 0
+}
+
+#site-border-right {
+    right: 0
+}
+
+#site-border-bottom,
+#site-border-top {
+    left: 0;
+    right: 0;
+    height: 10px
+}
+
+#site-border-top {
+    top: 0
+}
+
+#site-border-bottom {
+    bottom: 0
+}
+
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+.cover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.h2,
+.h3,
+h2,
+h3 {
+    font-weight: 700;
+    line-height: 1.1;
+    color: #ffb500;
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+
+.h2,
+h2 {
+    font-size: 30px
+}
+
+.h3,
+h3 {
+    font-size: 20px
+}
+
+p {
+    margin: 0 0 10px
+}
+
+
+ul {
+    margin-top: 0;
+    margin-bottom: 9.5px
+}
+
+/*Top menuen til større skærme*/
+
+.nav {
+    margin-bottom: 0;
+    padding-left: 0
+}
+
+.nav > li,
+.nav > li > a {
+    position: relative;
+    display: block
+}
+
+.nav > li > a {
+    padding: 10px 15px
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+    text-decoration: none;
+    background-color: transparent
+}
+
+.navbar {
+    border: none;
+    min-height: inherit
+}
+
+.navbar-collapse {
+    overflow-x: visible;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 1px solid transparent
+}
+
+.navbar-collapse:after,
+.navbar-collapse:before {
+    display: table
+}
+
+.navbar-collapse:after {
+    clear: both
+}
+
+.navbar-fixed-top,
+.navbar-collapse {
+    max-height: 340px
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px
+}
+
+.navbar-nav {
+    margin: .25px -15px
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: transparent;
+    color: #000
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #000
+}
+
+.navbar-default .navbar-collapse .navbar-nav,
+.navbar-collapse {
+    padding: 20px
+}
+
+.navbar-default .navbar-nav {
+    margin-top: 0;
+    border-bottom: 1px solid #eee
+}
+
+/*Størrelse på navbar*/
+
+.nav > li > a {
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+/*Hover til navbar*/
+
+.nav > li > a.active,
+.nav > li > a:hover {
+    font-weight: 700
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+
+
+.column1,
+.column2,
+.column3,
+.column4,
+.column5,
+.column6 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.column1 {
+    width: 100%;
+    float: left
+}
+
+.button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 14px;
+    font-size: 11px;
+    line-height: 1.78;
+    border-radius: 0;
+}
+
+.button:active:focus,
+.button:focus {
+    outline: 5px auto;
+    outline-offset: -2px
+}
+
+.button:focus,
+.button:hover {
+    color: #000;
+    text-decoration: none
+}
+
+/*responsiv bokse med cases*/
+
+.button,
+.button:active {
+    outline: 0;
+    background-image: none;
+
+}
+
+/*read more knap*/
+
+.button-default,
+.button-default:active,
+.button-default:active:focus,
+.button-default:active:hover,
+.button-default:focus,
+.button-default:hover {
+    color: #000;
+    background-color: transparent;
+    border-color: #000
+}
+
+.collapse {
+    display: none
+}
+
+/*For ikke at vise det er links*/
+
+a {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none
+}
+
+a:focus,
+a:hover {
+    color: #0012b3;
+    outline: 0;
+}
+
+a:focus {
+    outline: 5px auto;
+    outline-offset: -2px
+}
+
+
+.section-container-spacer {
+    margin-bottom: 35px
+}
+
+.section-container {
+    padding: 60px 0;
+}
+
+/*Menu til portfoliosite*/
+
+.card-container {
+    background-color: #fff;
+    padding: 2rem 5rem;
+    position: relative;
+    width: 80%;
+    margin: -10em auto 20px
+}
+
+/*Read more knap til portfolio-site*/
+
+.button {
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.button-default:focus,
+.button-default:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000
+}
+ 
+
+@media (max-width:768px) {
+    .section-container:first-of-type {
+        padding-top: 30px
+    }
+    .card-container {
+    background-color: #fff;
+    padding: 2rem 5rem;
+    position: relative;
+    width: 80%;
+    margin: -10em auto 20px
+    }
+
+    /*Portfolio-menu til mobil*/
+    .card-container {
+        padding: 2rem;
+        margin-top: -5em
+    }
+    .card-container.card-container-lg {
+        width: 95%;
+        padding: 2rem 3em;
+        margin-top: -10em
+    }
+    /*Burgermenu fra case3 med modificeringer*/
+    #burgertoggle {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+	}
+
+    #burgertoggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+
+    }
+
+    #burgertoggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: #cdcdcd;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+    }
+
+    #burgertoggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #burgertoggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #burgertoggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    #burgertoggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #burgertoggle input:checked ~ span:nth-last-child(2) {
+        opacity: 1;
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #burger {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 0;
+        padding: 50px;
+        padding-top: 125px;
+        line-height: 40px;
+        right: -100px;
+        background: #ddd;
+        list-style-type: none;
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #burger:hover,
+    #burger:focus {
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+        
+    }
+
+    #burger > li > a {
+        padding: 10px 0;
+        font-size: 20px;
+        color: #000
+    }
+
+    #burgertoggle input:checked ~ ul {
+        transform: scale(1.0, 1.0);
+        opacity: 1;
+    }
+}
+
+/*Ændringer ift desktop skærm*/
+@media (min-width:768px) {
+    /*Padding til ramme om h2 på desktop*/
+    .h2,
+    h2 {
+        padding: 0 30px
+    }
+
+    /*Border til menubar mm*/
+    .navbar {
+        margin: 10px
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-collapse {
+        margin: 0;
+        padding: 30px 0
+    }
+    .navbar-default .navbar-collapse .navbar-nav,
+    .navbar-collapse {
+        padding: 0
+    }
+    .navbar-nav > li > a {
+        border-right: 1px solid #fff
+    }
+    .navbar-default .navbar-nav {
+        border: none
+    }
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        box-shadow: none
+    }
+    .navbar-collapse,
+    .collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0;
+        overflow: visible!important
+    }
+    .navbar-fixed-top,
+    .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0
+    }
+    .navbar-nav {
+        float: left;
+        margin: 0
+    }
+    .navbar-nav > li {
+        float: left
+    }
+    .navbar-nav > li > a {
+        padding-top: .5px;
+        padding-bottom: .5px
+    }
+    .navbar-right {
+        float: right!important;
+        margin-right: -15px
+    }
+
+    .container {
+        width: 750px
+    }
+
+    .column2,
+    .column3 {
+        float: left
+    }
+    .column2 {
+        width: 33.33333%
+    }
+    .column3 {
+        width: 66.66667%
+    }
+    .column6 {
+        width: 83.33333%
+    }
+
+    .col-sm-offset-1 {
+        margin-left: 20%
+    }
+    /*Portfolio-menu til desktop*/
+    .card-container {
+        padding: 2rem;
+        margin-top: -5em
+    }
+    /*Gem burgermenu på desktop*/
+    #burger {
+        float: right;
+        visibility: hidden
+    }
+}
+
